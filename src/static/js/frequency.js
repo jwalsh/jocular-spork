@@ -19,19 +19,21 @@ var normalize = function(word) {
  */
 var frequency = function(text) {
   var distribution = text
-          .split(' ')
-          .map(normalize)
-          .filter(function(v) {
-        return v;
-          })
-          .reduce(function(p, c, i) {
-        p[c] = p[c] ? ++p[c] : 1;
-        return p;
-          }, {});
-  var sorted = Object.keys(distribution).sort(function(a, b) {
-    return distribution[b] - distribution[a];
-  }).map(function(e, i, c) {
-    return [e, distribution[e]];
-  });
+      .split(' ')
+      .map(normalize)
+      .filter(function(v) {
+                return v;
+      })
+      .reduce(function(p, c, i) {
+                p[c] = p[c] ? ++p[c] : 1;
+                return p;
+      }, {});
+  var sorted = Object.keys(distribution)
+      .sort(function(a, b) {
+        return distribution[b] - distribution[a];
+      })
+      .map(function(e, i, c) {
+                return [e, distribution[e]];
+      });
   return sorted;
 };

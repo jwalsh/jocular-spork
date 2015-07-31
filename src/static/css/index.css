@@ -25,5 +25,6 @@ code, tt, pre {
 }
 
 #input {
-    width: 600px;
+    width: 50%;
+    background-color: #dedede
 }

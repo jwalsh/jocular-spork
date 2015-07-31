@@ -14,6 +14,9 @@ var tests =
           ' Integer efficitur, odio eget efficitur rutrum.'
     };
 
+
+// Input to DTMC transformation matrix with
+// https://github.com/NathanEpstein/stochastic
 var letters = 'abcdefghijklmnopqrstuvwxyz'.split('');
 var lettersFrequency = [8.167, 1.492, 2.782, 4.253, 12.702, 2.228,
   2.015, 6.094, 6.966, 0.153, 0.772, 4.025,

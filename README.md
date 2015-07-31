@@ -1,7 +1,9 @@
 # jocular-spork
 
+Show word frequencies. 
+
 ## Usage
 
     npm install
-    grunt
+    ./node_modules/grunt-cli/bin/grunt
     open dist/index.html

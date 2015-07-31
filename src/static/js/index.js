@@ -31,3 +31,12 @@ var chartFrequency = function(frequencies) {
       document.getElementById('chart'));
   chart.draw(data, options);
 };
+
+
+/**
+ * Event Handlers
+ */
+var input = document.getElementById('input');
+input.onkeyup = processText;
+input.onblur = processText;
+window.onload = processText;

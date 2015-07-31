@@ -1,17 +1,27 @@
 <html>
   <head>
     <title>Word Frequency</title>
-    <link rel="stylesheet" href="https://wal.sh/static/css/global.css" type="text/css"/>
-    <link rel="stylesheet" href="static/css/index.css" type="text/css"/>
+    <link rel="stylesheet" href="static/css/index.css?__inline=true" type="text/css"/>
   </head>
   <body>
     <h1>Word Frequency</h1>
     <h2>Input</h2>
 
+    <div id="samples">Samples: simple, lorem, </div>
+
+    <form id="process" onsubmit="processText(); return false;">
+      <textarea id="input">a a a a a b b b c d</textarea>
+      <p>
+        <input type="submit"/>
+      </p>
+    </form>
+
     <h2>Output</h2>
 
-    <div id="output"></div>
+    <pre id="output"></pre>
 
-    <script src="static/js/index.js"></script>
+    <script src="static/js/frequency.js?__inline=true"></script>
+    <script src="../test/static/js/index.js?__inline=true"></script>
+    <script src="static/js/index.js?__inline=true"></script>
   </body>
 </html>

@@ -17,7 +17,6 @@ module.exports = function(grunt) {
                 dest: 'dist/index.html'
             }
         },
-
         jshint: {
             files: ['Gruntfile.js', 'src/**/*.js', 'test/**/*.js'],
             options: {
@@ -28,7 +27,7 @@ module.exports = function(grunt) {
         },
         watch: {
             files: ['<%= jshint.files %>'],
-            tasks: ['jshint']
+            tasks: ['jshint', 'inline']
         }
     });
 

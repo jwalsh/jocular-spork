@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "Word Frequencies",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "scripts": {
+        "build": "browserify src/static/js/index.js -o dist/bundle.js",
+        "watch": "watchify src/static/js/index.js -o dist/bundle.js --debug --verbose",
+        "test": "node test/static/js/index.js"
   },
   "repository": {
     "type": "git",
@@ -18,9 +20,13 @@
   "homepage": "https://github.com/jwalsh/jocular-spork",
   "devDependencies": {
     "grunt": "^0.4.5",
+    "grunt-browserify": "^4.0.0",
     "grunt-contrib-concat": "^0.5.1",
     "grunt-contrib-jshint": "^0.11.2",
     "grunt-contrib-watch": "^0.6.1",
     "grunt-inline": "^0.3.6"
+  },
+  "dependencies": {
+    "stochastic": "0.0.13"
   }
 }

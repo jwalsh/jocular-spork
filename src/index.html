@@ -1,32 +1,30 @@
 <html>
   <head>
     <title>Word Frequency</title>
-    <link rel="stylesheet" href="static/css/index.css?__inline=true" type="text/css"/>
+    <link rel="stylesheet" href="static/css/index.css" type="text/css"/>
   </head>
   <body>
+
     <h1>Word Frequency</h1>
+
     <h2>Input</h2>
 
-      <textarea id="input" class="materialize-textarea">a a's a A a. b b
-        b c d
-        E. e   B's b. B B b
-      </textarea>
-      <p>
-        <button class="btn waves-effect waves-light"
-                onclick="processText(); return false;">Process
-        </button>
-      </p>
-
+    <textarea id="input" class="materialize-textarea">a a's a A a. b b
+      b c d
+      E. e   B's b. B B b
+    </textarea>
+    <p>
+      <button class="btn waves-effect waves-light"
+              onclick="processText(); return false;">Process
+      </button>
+    </p>
 
     <h2>Output</h2>
 
     <div id="chart"></div>
     <pre id="output"></pre>
 
-
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
-    <script src="static/js/frequency.js?__inline=true"></script>
-    <script src="../test/static/js/index.js?__inline=true"></script>
-    <script src="static/js/index.js?__inline=true"></script>
+    <script src="../dist/bundle.js"></script>
   </body>
 </html>

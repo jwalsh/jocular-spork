@@ -1,6 +1,7 @@
-// dependency: frequency.js, test/**/index.js
 console.log('index.js');
 google.load('visualization', '1', {packages: ['corechart', 'bar']});
+
+var frequency = require('./frequency.js');
 
 
 /**

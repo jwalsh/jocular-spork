@@ -2,7 +2,7 @@ console.log('index.js');
 google.load('visualization', '1', {packages: ['corechart', 'bar']});
 
 var frequency = require('./frequency.js');
-
+var Bandit = require('bayesian-bandit').Bandit;
 
 /**
  * Acquire user text input and render

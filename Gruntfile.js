@@ -6,7 +6,8 @@ module.exports = function(grunt) {
             files: ['Gruntfile.js', 'src/**/*.js', 'test/**/*.js']
         },
         browserify: {
-            'dist/index.js': ['src/static/js/index.js']
+            'dist/index.js': ['src/static/js/index.js'],
+            'dist/test.js': ['test/static/js/client.js']
         },
         watch: {
             files: ['<%= jshint.files %>', 'src/index.html', 'src/**/*.css'],
